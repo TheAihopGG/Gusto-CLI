@@ -1,0 +1,18 @@
+[project]
+name = "gusto-cli"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "platformdirs>=4.10.0",
+    "psycopg[binary]>=3.3.4",
+    "typer>=0.26.8",
+    "yoyo-migrations>=9.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "debugpy>=1.8.21",
+    "pyinstaller>=6.21.0",
+]
